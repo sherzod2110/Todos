@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <main>
+      <section class="">
+        <div class="container">
+          <div class="w-100 bg-primary text-center mt-3 py-5" style="height: 130px; border-radius: 50px;">
+            <h1 class="text-center text-white">Todos</h1>
+          </div>
+          <div class="d-flex justify-content-between">
+            <form class="form col-5 mt-5 ms-3" style="height: 400px;">
+              <div>
+                <input class="input form-control w-75 border border-2 ms-auto me-auto mt-5" type="text" placeholder="Type..." required/>
+              </div>
+              <button class="btn btn-success w-75 mt-4" style="margin-left: 67px;">Add Todos</button>
+            </form>
+            <div class="box col-5 mt-5 me-3 position-relative" style="height: 400px;">
+              <ul class="todos-list px-4">
+                <p class="h1 js-text">Nothing</p>
+              </ul>
+              <div class="position-absolute bottom-0 start-0 end-0 d-flex justify-content-around py-3 px-3 gap-3" style="margin-bottom: 50px;">
+                <button class="js-button-all btn btn-info w-100 text-white">All <span class="js-spn"> 0</span></button>
+                <button class="js-button-com btn btn-danger w-100">Completed <span class="js-spn-2">0</span></button>
+                <button class="js-button-un btn btn-primary w-100">Uncompleted <span class="js-spn-3">0</span></button>
+
+              </div>
+              <div class="px-3"><button class="js-clear-btn btn btn-success px-3 position-absolute bottom-0 mb-3" style="width: 510px;">Clear</button></div>
+            </div>
+          </div>
+
+
+          
+        </div>
+      </section>
+    </main>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/utilis.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
